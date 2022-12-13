@@ -1,0 +1,361 @@
+body {
+    margin: 0px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: scroll
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.home {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 900px;
+    background-color: whitesmoke;
+    background-image: url(./clouds-g93d9c0396_1920.jpg);
+    background-size: cover;
+    filter: blur(3px)
+}
+
+.menu {
+    position: sticky;
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    border-bottom: solid 4px;
+    border-color: gray;
+    backdrop-filter: blur(500px);
+    margin: 0px;
+}
+
+.name {
+    padding-top: 5px;
+    text-align: left;
+    color: white;
+    justify-content: left;
+    flex-grow: 19
+}
+
+.item {
+    padding-top: 5px;
+    text-align: center;
+    font-size: 40px;
+    color: black;
+    justify-content: center;
+    flex-grow: 1;
+    margin: 0px;
+    transition-duration: 0.5s;
+
+}
+
+.item:hover {
+    background-color: gray;
+}
+
+.dropbtn {
+    background-color: rgba(26, 205, 255, 0);
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    text-align: center;
+    font-size: 35px;
+    color: black;
+    justify-content: center;
+    flex-grow: 1;
+    margin: 0px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropees {
+    background-color: rgba(255, 255, 255, 0.325);
+    display: none;
+    margin-left: 35px;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropees a {
+    font-size: 35px;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropees a:hover {
+    background-color: Grey;
+}
+
+.dropdown:hover .dropees {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: grey;
+}
+
+.ppic {
+    transform: none;
+    transition: .7s;
+    position: relative;
+    margin: auto;
+    margin-top: 50px;
+    width: 400px;
+    height: 550px;
+    border-radius: 7px;
+    background-image: url(./selfie.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+
+.ppic:hover {
+    padding-right: 300px;
+}
+
+.foota {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 200px;
+    background-color: aliceblue;
+}
+
+#space {
+    position: relative;
+    height: 250px;
+    width: 700px;
+}
+
+#form {
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    position: relative;
+    width: 400px;
+    perspective: 20px;
+}
+
+#leg {
+    text-align: center;
+    font-size: 30px;
+}
+
+fieldset {
+    background-color: whitesmoke;
+    border-radius: 5px;
+    border: none;
+}
+
+textarea {
+    resize: none;
+}
+
+.gall {
+    margin-top: 200px;
+    min-height: 500px;
+    display: grid;
+    place-content: start center;
+    background-color: whitesmoke;
+    overflow: hidden;
+}
+
+article {
+    position: relative;
+    text-align: center;
+    top: 20vh;
+    width: 40vw;
+}
+
+article h1,
+article p {
+    margin: 10px;
+}
+
+article h1 {
+    font-size: 1.2rem;
+}
+
+article p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.g {
+    width: auto;
+    height: .1vh;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-rows: 10vh;
+    place-content: start center;
+    z-index: 1;
+    transition: all 1s;
+    position: relative;
+    top: 5vh;
+}
+
+.g:hover {
+    background: linear-gradient(transparent, hsla(0, 0%, 100%, 0.5), transparent);
+    height: 500px;
+    width: 50vw;
+}
+
+.g a {
+    font: 0.8em monospace;
+    position: static;
+    display: block;
+    width: 5ch;
+    height: 5ch;
+    display: grid;
+    place-content: center;
+    background: hsla(0, 0%, 100%, 0.5);
+    color: #333;
+    text-decoration: none;
+    border-bottom: thin solid rgb(113, 113, 113);
+    box-sizing: border-box;
+}
+
+.g a:hover {
+    background: hsla(0, 0%, 0%, 0.5);
+    color: #eee;
+    border-bottom: 0 none;
+}
+
+.g a img {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 500px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    -o-object-position: center;
+    object-position: center;
+    -webkit-clip-path: polygon(50% 0, 50% 0, 50% 100%, 50% 100%, 50% 0, 50% 0, 50% 100%, 50% 100%);
+    clip-path: polygon(50% 0, 50% 0, 50% 100%, 50% 100%, 50% 0, 50% 0, 50% 100%, 50% 100%);
+    transition: -webkit-clip-path 0.3s ease-in;
+    transition: clip-path 0.3s ease-in;
+    transition: clip-path 0.3s ease-in, -webkit-clip-path 0.3s ease-in;
+}
+
+.g a:hover img,
+.g a img:hover {
+    -webkit-clip-path: polygon(50% 0, 0 0, 0 100%, 50% 100%, 50% 0, 100% 0, 100% 100%, 50% 100%);
+    clip-path: polygon(50% 0, 0 0, 0 100%, 50% 100%, 50% 0, 100% 0, 100% 100%, 50% 100%);
+}
+
+article {
+    transition: filter 0.5s;
+}
+
+.g:hover+article {
+    filter: blur(3px);
+    visibility: hidden;
+}
+
+@media(max-width:612px) {
+    .item {
+        padding-left: 10px;
+        flex-grow: 2;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.projects {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-color: lightgray;
+    height: 800px;
+    width: 100%;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: scroll
+}
+
+.projects::-webkit-scrollbar {
+    display: none;
+}
+
+.grid-container {
+    justify-content: center;
+    padding: auto;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 350px 350px 350px;
+    padding: 20px;
+    gap: 50px
+}
+
+.grid-item {
+    justify-self: center;
+    align-self: center;
+    border: 2px solid;
+    padding: 20px;
+    height: 200px;
+    width: 200px;
+    font-size: 30px;
+    text-align: center;
+    transition: .7s;
+    border-radius: 10px;
+    overflow: hidden;
+    color:rgba(255, 255, 255, 0.325);
+}
+
+.grid-item:hover {
+    height: 300px;
+    width: 300px;
+    border-radius: 0px;
+}
+.gamedes{
+    display: flex
+}
+.paragraph{
+    height: 800px;
+    flex: 40%;
+    background-color: whitesmoke;
+}
+.slideshow{
+    height: 800px;
+    flex: 60%;
+    background-color: blueviolet;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: scroll;
+    animation: slide 10s linear  infinite;
+}
+.slideshow::-webkit-scrollbar {
+    display: none;
+}
+#Title{
+    font-size: 70px;
+    margin-left: 25px;
+}
+#explan{
+    font-size: 25px;
+    margin-left: 25px;
+    margin-right: 20px;
+    word-spacing: 10px;
+}
+@media slide{
+    
+}
