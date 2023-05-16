@@ -6,141 +6,104 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>Dj's Portfolio</title>
 </head>
 
-<body>
+<body id="body">
+
+
+    <!-- STARTUP SCREEN -->
     <div class="home"></div>
     <nav class="menu">
-        <div class="name"><img src="./fish-g2f39560a7_1920-removebg-preview (1).png" width="60px" height="50px"> </div>
-        <a href="#about" class="item" target="_self">About</a>
+        <div class="name"><img src="./fish-g2f39560a7_1920-removebg-preview (1).png" width="50px" height="45px"></div>
+        <a href="./index.html" class="item" target="_self" style="text-decoration:none;">Home</a>
         <div class="dropdown">
             <button class="dropbtn">Work</button>
             <div class="dropees">
-                <a href="#art" class="item" target="_self">Art</a>
-                <a href="#gd" class="item" target="_self">Game Design</a>
-                <a href="#proj" class="item" target="_self">Code Projects</a>
+                <a href="./AD.html" class="item" target="_self">Art</a>
+                <a href="./GD.html" class="item" target="_self">Game Design</a>
+                <a href="./CD.html" class="item" target="_self">Code Projects</a>
+            </div>
+
+        </div>
+    </nav>
+    <img class="logo" src="./DJ.png">
+    <div class="more">
+        <h2>Enter Experience</h2>
+        <a href="#boutsum" target="_self" onclick="priveledge()"><img class="aro" src="./arrow.png"></a>
+    </div>
+
+    <!-- About me -->
+    <img id="boutsum" src="./Daneil J. Morris (1).png" style="width:100%; box-shadow:0 0 13px #e7eaeb"><br><br><br><br>
+    <div style="display:flex;">
+        <div style="display:flex; justify-content:center; border-radius: 100%; overflow: hidden; width:160vw; height:45vh; margin:auto; flex-basis:100vw; margin-left: 10%; box-shadow:0 0 13px #e7eaeb">
+            <img src="./IMG_6735.JPG" style="width:30vw; height:70vh;background-image: url(./IMG_6735.JPG);" alt="">
+        </div>
+        <div id="boutp">
+            <div class="invi2"><b style="align-self:center; font-size: 30px;">The Beginning</b>
+                <hr style="width: 99%; margin: 10px; border-color:black;">
+                <p style="margin: 0px; text-indent: 10%;">I was born in Texas and moved a lot due to military. I still found
+                    a way to improve and become talented in many different arts. I became an honor student in elementary and
+                    continued to strive in years to come. I currently do Coding, Game design, Graphic design, Gaming, and
+                    Music in my off time. I have certification for Illistator that expires in 2024. </p>
             </div>
         </div>
-        <a href="#form" class="item" target="_self">Commission/Contacts</a>
-    </nav>
-    <div class="ppic" onmouseover="word()" onmouseout="hid()">
-        <div id="who"
-            style="transition: 1s; display:block; width:500px; height: 800px; opacity: 85%; filter:blur(2px);background-color: white; color: white;text-align: center;font-size: 20px;">
-            <p id="fr" style="margin-top: 0px; padding-top: 50px; padding-left: 25px; padding-right: 25px;">My name is
-                Daniel Morris, but my friends call me DJ. I do game design, art, and most of
-                all coding.I love music and cookin'. I am great in groups and I push through every challenge in my way.
-                I am enrolled in dual enrollment and i have participated in multiple game jams.</p>
-        </div>
     </div>
-    <div id="space" id="about"></div>
-
-    <div class="gall" id="art">
-        <base target="_blank" />
-        <div class="g">
-            <a href="./gold robo.png">1<img src="./gold robo.png" style="margin-top: 100px;" /></a>
-            <a href="./New Piskel (13).png">2<img src="./New Piskel (13).png" /></a>
-            <a href="./GUB3 (1).png">3<img src="./GUB3 (1).png" /></a>
-            <a href="./2020-09-10-194732-Unerversal (1).png">4<img src="./2020-09-10-194732-Unerversal (1).png" /></a>
-            <a href="./card designs1.png">5<img src="./card designs1.png" /></a>
-            <a href="./card designs2.png">6<img src="./card designs2.png" /></a>
-            <a href="./card designs3.png">7<img src="./card designs3.png" /></a>
-            <a href="./card designs4.png">8<img src="./card designs4.png" /></a>
-            <a href="./card designs5.png">9<img src="./card designs5.png" /></a>
-            <a href="./graft.png">10<img src="./graft.png" /></a>
+    <div id="cards">
+        <div class="card" style="width: 100%;">
+            <img src="./WGYR6624.JPG" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Socials</h5>
+                <p class="card-text">Some of my socials to get in further contact with me and connect more with what im doing and what i do. This includes my gmail, discord, and linkedin.<br>I also have a few content creation accounts With little to no material yet.Keep an eye out for uploads to stay updated with my progress as the ultimate creative output.
+                </p>
+                <a href="https://linktr.ee/silva7katan?utm_source=linktree_admin_share" class="btn" target="_blank" style="  background-color: #e7eaeb;">Check the Socials</a>
+            </div>
         </div>
-        <article>
-            <h1>Here is some art I have made!</h1>
-            <p>I have always been a big fan of graffeti type designing and modern ways of using chanpes and colors to
-                convey a message. I also do a lot of pixel art and I also to sprite animation for some small games i
-                create. It useally takes me 1-2 hours to complete a full sprite and i do my sprite work in aseprite and
-                i usally specilize in smaller art such as 4bit-32bit. I also sketch a bit, even though im not the best I
-                still give it my best to make my own style of art. I started with sketching when i would make paper
-                cards for card games me and my friend would play at lunch inspired by yugioh and pokemon cards.</p>
-        </article>
-    </div>
-    <div id="space"></div>
-    <div class="gamedes" id="gd">
-        <div class="paragraph">
-            <h1 id="Title">Game Design</h1>
-            <p id="explan">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti perferendis obcaecati, nam itaque cumque deserunt, architecto est omnis tempore ullam praesentium fugit tempora ipsa aliquam perspiciatis porro sapiente quod eaque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui officiis ratione quidem laborum, quibusdam neque cum deleniti veniam eveniet numquam temporibus atque a quis. Qui optio voluptatem temporibus consequatur eligendi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima repellat accusamus cum, repudiandae unde natus voluptatum soluta harum, modi magnam itaque? Nam iste in quibusdam ex molestiae cumque voluptatem eius.</p>
+        <div class="card" style="width: 100%;">
+            <img src="./IMG_1227.JPG" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Formal Portfolio doc</h5>
+                <p class="card-text">My google doc version for my portfolio for employers</p>
+                <br>
+                <p class="card-text">This document was last updated January 2023. Please expect further updates on my portfolio as time passes.</p>
+                <a href="https://docs.google.com/document/d/1fqQ2d4O3_nLY5DtkcLg3iUdv_mJ0zPiu2y_W8Q3mIXc/edit?usp=sharing" target="_blank" class="btn" style=" background-color: #e7eaeb;">Read Portfolio</a>
+            </div>
         </div>
-        <div class="slideshow">
-            <img src="./gdes1.png" style="width: 100%; height: 800px">
-            <img src="./gdes2.png" style="width: 100%; height: 800px">
-            <img src="./gdes3.png" style="width: 100%; height: 800px">
+        <div class="card" style="width: 120%;">
+            <img src="./selfie.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">How I learned</h5>
+                <p class="card-text">Besides from classic education and honnors roll classes. I am currently enrolled in west-mec for it's coding classes and I am getting college credits for my ap classes. I have tooken id tech to learn how to use unity and i self taught myself to do sprite art, music, C# for godot including it's unique coding language gdscript. This button will lead to a surprise I have been working on for a short time.</p>
+                <a href="https://www.youtube.com/watch?v=mx86-rTclzA" target="_blank" class="btn" style=" background-color: #e7eaeb;">Special Surprise</a>
+            </div>
         </div>
     </div>
 
-    <div class="projects" id="proj">
-        <div class="grid-container">
-            <div class="grid-item"
-                style="background-image: url(./calc.png); background-size:auto; background-position-x: -450px; background-position-y: -450px; background-repeat: no-repeat;">
-                <a href="https://katanpink.github.io/calculator/">Calculator</a></div>
-            <div class="grid-item" style="background-image: url(./sonic.png); background-size: cover;""><a href="
-                https://katanpink.github.io/sonic-crew/">Sonic</a></div>
-            <div class="grid-item" style="background-image: url(./album.png); background-size: cover;"><a
-                    href="https://katanpink.github.io/music-library/">Albums</a></div>
-            <div class="grid-item" style="background-image: url(./muse.png); background-size: cover;"><a
-                    href="https://katanpink.github.io/Music-fest-form/">Music fair</a></div>
-            <div class="grid-item" style="background-image: url(./quiz.png); background-size: cover;"><a
-                    href="https://katanpink.github.io/Quiz/">Epic Quiz</a></div>
-            <div class="grid-item" style="background-image: url(./ocean.png); background-size: cover;"><a
-                    href="https://katanpink.github.io/OceanRant/">Ocean Site</a></div>
-            <div class="grid-item">7</div>
-            <div class="grid-item">8</div>
-            <div class="grid-item">9</div>
+    <div id="bantxt">
+        <br>
+        <h3 style="margin-left: 5%; margin-right:5%; font-size:35px;">"If you make your bed every morning, you will have accomplished the first task of the day. It will give you a small sense of pride, and it will encourage you to do another task and another and another. By the end of the day, that one task completed will have turned into many tasks completed. Making your bed will also reinforce the fact that little things in life matter... And, if by chance you have a miserable day, you will come home to a bed that is made—that you made—and a made bed gives you encouragement that tomorrow will be better."-Admiral McRaven</h3>
+        <div id="links">
+            <a href="./AD.html" class="btn lin" style=" background-color: #e7eaeb;">Art</a>
+            <a href="./GD.html" class="btn lin" style=" background-color: #e7eaeb;">Game Design</a>
+            <a href="./CD.html" class="btn lin" style=" background-color: #e7eaeb;">Coding projects</a>
         </div>
     </div>
 
-    <form id="form">
-        <fieldset>
-            <Legend id="leg">Want a Commission?</Legend>
-            <!--Commission form-->
-            <label for="Name">Client Name:</label>
-            <input type="text" required id="Name" name="Name" placeholder="Jacob Julia" pattern="[a-zA-Z]{2,}"
-                maxlength="20" size="39"><br><br>
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone" placeholder="(xxx)-xxx-xxxx" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                maxlength="12" required size="37"><br><br>
-            <!--Pulls their Credit Card number-->
-            <label for="CCN">Your Gmail:</label>
-            <input type="email" required id="CCN" name="CCN" placeholder="loremipsum@gmail.com"
-                pattern="^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$" maxlength="45" size="40"><br><br>
-            <label for="serv">Which service would you like?</label><br>
-            <input type="radio" id="Coding" name="serv" value="serv">
-            <label for="Coding">Coding</label><br>
-            <input type="radio" id="Art" name="serv" value="serv" required>
-            <label for="Art">Art</label><br>
-            <input type="radio" id="Game Design" name="serv" value="serv">
-            <label for="Game Design">Game Design</label><br>
-            <label for="rev">What's your idea?:</label><br>
-            <textarea id="rev" name="rev" rows="6" cols="50"></textarea><br>
-            <input type="submit" value="submit">
-            <input type="reset" value="reset">
-        </fieldset>
-    </form>
-    <footer class="foota">
-
-    </footer>
+    <div class="foota">
+        <p>@2023 Daniel J. Morris</p>
+    </div>
     <script>
-        var back = document.getElementById('who')
-        var bword = document.getElementById('fr')
-        function word() {
-            back.style.translate = '0px 350px'
-            back.style.paddingRight = '100px'
-            back.style.width = '700px'
-            back.style.opacity = '50%'
-            back.style.filter = 'none'
-            back.style.color = 'black'
-            bword.style.opacity = '100%'
+        var bod = document.getElementById('body')
+        norights()
+        function norights() {
+            
+            bod.style.overflowY = 'hidden'
         }
-        function hid() {
-            back.style.translate = '0px 0px'
-            back.style.paddingRight = '0px'
-            back.style.width = '500px'
-            back.style.opacity = '85%'
-            back.style.color = 'white'
+        function priveledge() {
+            bod.style.overflowY = 'scroll'
         }
     </script>
 </body>
