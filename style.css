@@ -511,6 +511,7 @@ a {
 }
 
 #boutsum{
+    width:100%; 
     padding-top:3%;
 }
 .btn{
@@ -546,4 +547,215 @@ a {
 #tite{
     text-align: center;
     font-size: 10vh;
+}
+#phish{
+    width: 50px;
+    height: 45px;
+}
+#circi{
+    display:flex; 
+    justify-content:center;
+    border-radius: 100%;
+    overflow: hidden; 
+    width:160vw; 
+    height:45vh; 
+    margin:auto; 
+    flex-basis:100vw; 
+    margin-left: 10%; 
+    box-shadow:0 0 13px #e7eaeb
+}
+#selfli{
+    width:30vw; 
+    height:70vh;
+    background-image: url(./IMG_6735.JPG);
+}
+#boutit{
+    align-self:center; 
+    font-size: 30px;
+}
+#cardian{
+    width: 120%;
+}
+#bbq{
+    font-size:35px;
+}
+
+@media only screen and (max-width: 768px) {
+    .menu{
+        width:100%;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    #phish{
+        width: 45px;
+        height: 40px;
+    }
+    .item{
+        font-size: 30px;
+    }
+    .dropbtn{
+        font-size: 30px;
+    }
+    .aro{
+       width: 64px;
+       height:64px 
+    }
+    #entex{
+        margin-top: 70px;
+        font-size: 20px;
+    }
+    .home{
+        height: 110vh;
+        width: 100%;
+    }
+    .logo{
+        margin-top: 40%;
+        transform: scale(3.0);
+    }
+    #boutsum{
+        width: 100%;
+        padding-top: 15%;
+        margin-top:150%;
+    }
+    #boutsect{
+        flex-direction: column;
+    }
+    #circi{
+        width:100vw;
+        margin: 0px;
+    }
+    #selfli{
+        width: 100%;
+        height: 120%;
+    }
+    #boutit{
+        font-size: 20px;
+    }
+    #boutex{
+        font-size: 15px;
+    }
+    .invi2{
+        width: 80%;
+        height: 50vh
+    }
+    #boutp{
+        justify-content: center;
+        align-items: flex-start;
+    }
+    #cards{
+        flex-direction: column;
+    }
+    #cardian{
+        width: 100%;
+    }
+    .card{
+        margin:0px;
+        width:100%;
+    }
+    #bbq{
+        font-size: 20px;
+    }
+    #links{
+        width: 100%;
+        flex-direction: column;
+    }
+    #bantxt{
+        height: 70vh;
+        margin-bottom: 10%;  
+    }
+    .foota{
+        bottom: 0px;
+    }
+    .btn{
+        transform: scale(0.8);
+        margin: 1%;
+        padding: 6%;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width:1499px){
+    .menu{
+        width:100%;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .aro{
+       width: 96px;
+       height:96px 
+    }
+    #entex{
+        margin-top: 70px;
+        font-size: 25px;
+    }
+    .home{
+        height: 110vh;
+        width: 100%;
+    }
+    .logo{
+        margin-top: 10%;
+        transform: scale(2.0);
+    }
+    #boutsum{
+        width: 100%;
+        padding-top: 10%;
+        margin-top:30%;
+    }
+    #boutsect{
+        flex-direction: row;
+    }
+    #circi{
+        justify-self: center;
+        width:130vw;
+        height: 25vh;
+        margin-right: 1%;
+        right: 3%;
+    }
+    #selfli{
+        width: 110vw;
+        height: 120%;
+    }
+    #boutit{
+        font-size: 20px;
+    }
+    #boutex{
+        font-size: 15px;
+    }
+    .invi2{
+        width: 80%;
+        height: 50vh
+    }
+    #boutp{
+        justify-content: center;
+        align-items: flex-start;
+    }
+    #cards{
+        flex-direction: row;
+    }
+    #cardian{
+        width: 100%;
+    }
+    .card{
+        margin:3%;
+        width:100%;
+    }
+    #bbq{
+        font-size: 20px;
+    }
+    #links{
+        width: 100%;
+        flex-direction: column;
+    }
+    #bantxt{
+        height: 55vh;
+        margin-bottom: 5%;  
+    }
+    .foota{
+        bottom: 0px;
+    }
+    .btn{
+        transform: scale(.9);
+        transform: scaleY(1.2);
+        margin: 2%;
+    }
 }
